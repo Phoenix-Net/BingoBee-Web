@@ -70,6 +70,7 @@ canvas {
 
 .text {
   position: absolute;
+  bottom: 50px;
   background: rgba(0, 0, 0, 0.4);
   color: #fff;
   font-weight: bold;

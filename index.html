@@ -1,88 +1,46 @@
+
+<!--
+Credit to generic.sucks for the website code.
+Art by /u/Kotirikkin / Kotirikkin#9112 on Reddit / Discord 
+Forked on Github @ https://github.com/Phoenixthedoggo/shep-butts
+
+Generic.sucks source: https://github.com/memework/generic-sucks
+-->
+
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>generic sucks</title>
+  <title>Shep Butts ❤️</title>
 
   <!-- open graph -->
-  <meta property="og:title" content="generic sucks">
-  <meta property="og:description" content="generic sucks">
+  <meta property="og:title" content="Shep Butts">
+  <meta property="og:description" content="Shep Butts">
   <meta property="og:type" content="web.page">
-  <meta property="og:image" content="https://cdn.discordapp.com/attachments/303278139201552385/359275965857398784/memeplane_small.png">
-  <meta property="og:url" content="http://generic.sucks">
+  <meta property="og:image" content=/phoenix.png>
+  <meta property="og:url" content="http://shepbutt.me">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <div id="ytplayer" style="display:none;"></div>
-
-  <script>
-    var tag = document.createElement('script');
-    tag.src = 'https://www.youtube.com/player_api';
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-    var player;
-    function onYouTubePlayerAPIReady() {
-      player = new YT.Player('ytplayer', {
-        height: '360', width: '640',
-        videoId: 'feA64wXhbjo',
-        events: {
-          'onReady': onPlayerReady,
-          'onStateChange': onPlayerStateChange
-        }
-      });
-    }
-
-    function onPlayerReady(event) {
-      event.target.setVolume(100);
-      event.target.playVideo();
-    }
-
-    function onPlayerStateChange(event) {
-      if (event.data === 0) {
-        event.target.playVideo();
-      }
-    }
-
-    setInterval(function() {
-      if (player == undefined || typeof(player.getCurrentTime) !== 'function' ||
-          hyperEnable == undefined) return;
-      var cur = player.getCurrentTime();
-      if (Math.round(cur) == 139) {
-        hyperEnable();
-      } else if (cur >= 215 && cur < 216) {
-        hyperDisable();
-      }
-    }, 1);
-  </script>
+<body></body>
 
   <canvas>
   </canvas>
 
-  <img id="memeplane" src="https://cdn.discordapp.com/attachments/303278139201552385/359275949843415041/memeplane.png">
+  <img id="memeplane" src="assets/phoenix.png">
 
   <div class="text">
-    GENERIC SUCKS
+    Shep Butts ❤️
   </div>
 
   <!-- images used in the canvas code -->
   <div class="images">
-    <img id="img-eyes" src="https://discordapp.com/assets/ccf4c733929efd9762ab02cd65175377.svg">
-    <img id="img-b1nzy" src="https://i.imgur.com/6k73fH0.png">
-    <img id="img-cat" src="https://cdn.discordapp.com/attachments/294638780940550144/295318364711157762/b1nzy.png">
-    <img id="img-jake" src="https://i.imgur.com/QxcIu2f.gif">
-    <img id="img-lul" src="https://cdn.discordapp.com/emojis/259722758114508800.png">
-    <img id="img-thinking" src="https://canary.discordapp.com/assets/53ef346458017da2062aca5c7955946b.svg">
-    <img id="img-hyperthink" src="https://cdn.discordapp.com/emojis/289872527105327105.png">
-    <img id="img-generic" src="https://cdn.discordapp.com/avatars/129303876976377856/a_f39846cb5d39fec56c86e1430b0c18c4.png">
-    <img id="img-thonkang" src="https://cdn.discordapp.com/emojis/243513506358362112.png">
-    <img id="img-feelsthinking" src="https://cdn.discordapp.com/emojis/287376427244978178.png">
-    <img id="img-owo" src="https://cdn.discordapp.com/emojis/293871480457003009.png">
-    <img id="img-banned" src="https://cdn.discordapp.com/emojis/243818902881042432.png">
-    <img id="img-b4nzy" src="https://cdn.discordapp.com/emojis/244636138491478017.png">
-    <img id="img-eggplant" src="https://canary.discordapp.com/assets/8234ccb1bad95b951ba3e44bf95214a6.svg">
-    <img id="img-blobangery" src="https://cdn.discordapp.com/emojis/295015945405988864.png">
+    <img id="img-butt" src="assets/butt.png">
+    <img id="img-bark" src="assets/barkbarkbark.png">
+    <img id="img-dogterminal" src="assets/dogterminal.png">
+    <img id="img-dabbingdoggo" src="assets/ddddab.png">
   </div>
 
   <script type="text/javascript" src="js/index.js"></script>
