@@ -12,18 +12,6 @@ var memes = [];
 var cap = 250;
 var hyper = false;
 
-function hyperEnable() {
-  hyper = true;
-  cap = 1000;
-  document.querySelector('#memeplane').style.animationName = 'fly-plane-extreme';
-}
-
-function hyperDisable() {
-  hyper = false;
-  cap = 250;
-  document.querySelector('#memeplane').style.animationName = 'fly-plane';
-}
-
 function draw() {
   ctx.clearRect(0, 0, cnvs.width, cnvs.height);
 
@@ -93,7 +81,7 @@ function spawnMeme() {
     x: x, y: y,
     width: img.width * far,
     height: img.height * far,
-    speed: img.width * far / 15,
+    speed: img.width * far / 30,
     rot: Math.random() * 2
   });
 }
